@@ -2017,7 +2017,7 @@ i = 0
 j = 0
 multiplier = 0
 total = 0
-while i < len(l1):
+while i < len(l1) and j < len(l2):
     num_l = l1[i]
     num_r = l2[j]
 
