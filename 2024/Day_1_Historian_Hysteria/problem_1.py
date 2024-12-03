@@ -2015,23 +2015,18 @@ print(total)
 
 i = 0
 j = 0
-multiplier = 0
 total = 0
 while i < len(l1) and j < len(l2):
     num_l = l1[i]
     num_r = l2[j]
 
     if num_l == num_r:
-        multiplier += 1
+        total += num_l
         j += 1
-
-    if num_l != num_r:
-        total += multiplier * num_l
-        multiplier = 0
-        if num_l > num_r:
-            j += 1
-        else:
-            i += 1
+    elif num_l > num_r:
+        j += 1
+    else:
+        i += 1
 print(total)
 
 
